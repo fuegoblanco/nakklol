@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style23.css">
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+
+  <script src="stages.js"></script>
+  <script src="components/Game.js"></script>
+  <script src="components/Grid.js"></script>
+  <script src="components/Cell.js"></script>
+  <script src="components/Brick.js"></script>
+  <script src="components/Door.js"></script>
+  <script src="components/GoThrough.js"></script>
+  <script src="components/Coin.js"></script>
+  <script src="components/Power.js"></script>
+  <script src="components/Entity.js"></script>
+  <script src="components/Ghost.js"></script>
+  <script src="components/Pacman.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <script src="index.js"></script>
+
+
+  <div class="gameboy">
+    <div id="gameboy__screen" class="gameboy__screen"></div>
+
+    <div class="buttons">
+
+
+      <hr>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <button id="up" class="button-axes axes-U">
+        <i class="arrow arrow-up"></i>
+      </button>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <br>
+
+      <button id="left" class="button-axes axes-L">
+        <i class="arrow arrow-left"></i>
+      </button>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <button id="right" class="button-axes axes-R">
+        <i class="arrow arrow-right"></i>
+      </button>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp;<button class="button-circle button-A">A</button> &nbsp; &nbsp;
+
+      <button class="button-circle button-B">B</button>
+      <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <button id="down" class="button-axes axes-D">
+        <i class="arrow arrow-down"></i>
+      </button>
+
+      <hr>
+
+      <hr>
+
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <h1 id="modalMessage">
+
+        </h1>
+        <button id="tweetScore">Tweet Score</button>
+        <button onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
